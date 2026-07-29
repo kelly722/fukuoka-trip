@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +6,16 @@
     <title>5天4夜福岡行程示意圖</title>
 
     <meta name="description"
-        content="福岡五天四夜自由行，美食、購物、文化與咖啡之旅。">
+          content="福岡五天四夜自由行，美食、購物、文化與咖啡之旅。">
 
     <meta property="og:title"
-        content="5天4夜福岡行程示意圖">
+          content="5天4夜福岡行程示意圖">
 
     <meta property="og:description"
-        content="美食・購物・文化・咖啡之旅">
+          content="美食・購物・文化・咖啡之旅">
 
     <meta property="og:image"
-        content="IMG_2262.jpeg">
+          content="IMG_2262.jpeg">
 
     <style>
         * {
@@ -31,7 +29,6 @@
                 "Microsoft JhengHei",
                 "PingFang TC",
                 sans-serif;
-
             background: #f8f6f2;
             color: #333;
         }
@@ -44,7 +41,6 @@
                     #fff7ef,
                     #fff3ea
                 );
-
             text-align: center;
             padding: 50px 20px;
         }
@@ -57,7 +53,7 @@
 
         .hero p {
             color: #b95e3c;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         /* 主內容 */
@@ -72,7 +68,6 @@
             background: #ffffff;
             border-radius: 20px;
             padding: 15px;
-
             box-shadow:
                 0 5px 20px rgba(0, 0, 0, 0.08);
         }
@@ -81,34 +76,35 @@
             display: block;
             width: 100%;
             height: auto;
-
             margin: 0 auto;
-
             border-radius: 12px;
         }
 
-        /* 旅程說明 */
-        .description {
-            margin-top: 30px;
+        /* 亮點說明區 */
+        .highlights {
+            margin-top: 25px;
 
-            background: white;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
 
-            border-radius: 20px;
-
-            padding: 25px;
-
-            text-align: center;
-
+        .highlight {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 24px;
             box-shadow:
-                0 5px 20px rgba(0, 0, 0, 0.05);
+                0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
-        .description h2 {
+        .highlight h3 {
             color: #23395d;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
         }
 
-        .description p {
+        .highlight p {
+            font-size: 1.35rem;
             line-height: 1.8;
             color: #555;
         }
@@ -117,7 +113,19 @@
         footer {
             text-align: center;
             color: #888;
-            padding: 30px 20px 50px;
+            padding: 40px 20px 60px;
+            font-size: 1rem;
+        }
+
+        /* 平板 */
+        @media (max-width: 992px) {
+            .highlight h3 {
+                font-size: 1.5rem;
+            }
+
+            .highlight p {
+                font-size: 1.15rem;
+            }
         }
 
         /* 手機版 */
@@ -132,7 +140,7 @@
             }
 
             .hero p {
-                font-size: 0.95rem;
+                font-size: 1rem;
             }
 
             .container {
@@ -141,6 +149,23 @@
 
             .image-card {
                 padding: 8px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight {
+                padding: 20px;
+            }
+
+            .highlight h3 {
+                font-size: 1.4rem;
+            }
+
+            .highlight p {
+                font-size: 1.1rem;
+                line-height: 1.7;
             }
         }
     </style>
@@ -155,49 +180,49 @@
 
     <main class="container">
 
-       <div class="image-card">
-    <img src="IMG_2262.jpeg"
-         alt="福岡五天四夜旅行行程圖"
-         class="trip-image"></div>
+        <div class="image-card">
+            IMG_2262.jpeg
+        </div>
+
         <section class="highlights">
 
-        <div class="highlight">
-            <h3>🍜 美食巡禮</h3>
-            <p>
-                一蘭拉麵、京都勝牛、
-                大東園燒肉、華味鳥水炊鍋。
-            </p>
-        </div>
+            <div class="highlight">
+                <h3>🍜 美食巡禮</h3>
+                <p>
+                    一蘭拉麵、京都勝牛、
+                    大東園燒肉、
+                    華味鳥水炊鍋。
+                </p>
+            </div>
 
-        <div class="highlight">
-            <h3>⛩ 文化景點</h3>
-            <p>
-                太宰府天滿宮、
-                櫛田神社、
-                柳川遊船。
-            </p>
-        </div>
+            <div class="highlight">
+                <h3>⛩ 文化景點</h3>
+                <p>
+                    太宰府天滿宮、
+                    櫛田神社、
+                    柳川遊船。
+                </p>
+            </div>
 
-        <div class="highlight">
-            <h3>🛍 購物天堂</h3>
-            <p>
-                天神商圈、
-                博多運河城、
-                Lalaport。
-            </p>
-        </div>
+            <div class="highlight">
+                <h3>🛍 購物天堂</h3>
+                <p>
+                    天神商圈、
+                    博多運河城、
+                    LaLaport 福岡。
+                </p>
+            </div>
 
-        <div class="highlight">
-            <h3>☕ 咖啡探索</h3>
-            <p>
-                FUK Coffee、
-                藍瓶咖啡等特色名店。
-            </p>
-        </div>
+            <div class="highlight">
+                <h3>☕ 咖啡探索</h3>
+                <p>
+                    FUK Coffee、
+                    Blue Bottle Coffee、
+                    福岡特色咖啡館巡禮。
+                </p>
+            </div>
 
-    </section>
-
-</div>
+        </section>
 
     </main>
 
@@ -206,5 +231,4 @@
     </footer>
 
 </body>
-
 </html>
